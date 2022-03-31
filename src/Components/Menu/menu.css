@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: green;
+    height: 3rem;
+    align-items: center;
+}
+
+.navlink {
+    margin-left: 1rem;
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: white;
+}
+
+.navlink:hover {
+    margin-bottom: 0.6rem;
+    color: white;
+}
+
+.navlink:active {
+    color: black;
+}
