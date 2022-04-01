@@ -12,12 +12,3 @@ nav {
     cursor: pointer;
     color: white;
 }
-
-.navlink:hover {
-    margin-bottom: 0.6rem;
-    color: white;
-}
-
-.navlink:active {
-    color: black;
-}
