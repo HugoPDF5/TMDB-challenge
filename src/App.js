@@ -1,11 +1,30 @@
-import { getMoviesByRate, getMovieGenres, getMovieDetails, getMovieByName } from './services/movies_api'
+//import { getMoviesByRate, getMovieGenres, getMovieDetails, getMovieByName } from './services/movies_api'
+import Home from './pages/Home/Home';
+import Genre from './pages/Genres/Genre'
+import Menu from './Components/Menu/Menu'
+import {Router, Route} from 'react-router-dom'
+import history from './history';
+
+
 
 function App(){
 
-    getMovieByName("8 mile")
+  
     return (
-      <>
-      </>
+    <Router  history={history}>
+     
+      <Menu />
+      <Route exact path="/">
+     
+        <Home />
+      </Route>
+
+      <Route path="/genres">
+        <Genre />
+      </Route>
+  
+
+    </Router>
     )
 }
 
