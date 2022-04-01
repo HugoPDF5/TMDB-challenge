@@ -2,9 +2,8 @@ import api from './api';
 
 export const callAPI = {
     getMoviesByPopularity: async () => {
-        const response = await api.get('movie/popular?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US')
+        const response = await api.get('movie/popular?api_key=fc45e0562ca750d5ca8a6f31cf72af4c')
             .then(res => {
-                console.log(res.data)
                 return res.data.results.filter((item, index) => {
                     if (index < 13) {
                         return item
@@ -19,10 +18,11 @@ export const callAPI = {
     getMovieGenres: async () => {
         const response = await api.get('genre/movie/list?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US')
             .then(res => {
-                return response
+               return res.data.genres
             }).catch(e => {
                 console.error(e)
             })
+            return response
     },
 
     getMovieDetails: async (movie_id) => {
