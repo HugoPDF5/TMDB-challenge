@@ -1,22 +1,33 @@
-import { NavLink } from "react-router-dom";
-import './menu.css'
+import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap'
 
 
 function Menu() {
     return (
-        <nav>
-            <NavLink className="navlink" exact to="/" activeStyle={{
-            fontWeight: "bold",
-            color: "black"
-            }}> <span>Home</span> 
-             </NavLink>
 
-            <NavLink className="navlink" to="/genres" activeStyle={{
-            fontWeight: "bold",
-            color: "black"
-            }}> <span>Genres</span> 
-            </NavLink>
-        </nav>
+        <Navbar bg="light" expand="lg">
+            <Container fluid>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/genres">Genre</Nav.Link>
+                    </Nav>
+                    <Form className="d-flex">
+                        <FormControl
+                            type="search"
+                            placeholder="Search a movie"
+                            className="me-2"
+                            aria-label="Search"
+                        />
+                        <Button variant="outline-success">Search</Button>
+                    </Form>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
