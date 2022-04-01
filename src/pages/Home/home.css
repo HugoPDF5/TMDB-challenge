@@ -1,11 +1,11 @@
 @import '../general.css';
 
 table {
-    background: white;
+    background-color: #0076ce;
     width: 100%;
-    border-radius: 0.4rem;
     padding: 1.8rem;
     text-align: center;
+    color:white;
 }
 
 thead {
