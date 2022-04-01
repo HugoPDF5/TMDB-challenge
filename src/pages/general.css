@@ -32,28 +32,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-header nav{
-    display: flex;
-    justify-content: space-evenly;
-    background: green;
-    height: 3rem;
-    align-items: center;
-}
-
-header nav li {
-    margin-left: 1rem;
-    transition: all 300ms ease;
-    cursor: pointer;
-}
-
-header nav li:hover {
-    margin-bottom: 0.6rem;
-    color: white;
-    font-weight: 700;
-}
-
 .movies {
-    margin-top: 1rem;
     background: white;
     height: 100%;
     width: 100%;
