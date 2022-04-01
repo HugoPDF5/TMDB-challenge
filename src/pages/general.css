@@ -19,13 +19,13 @@ body {
     width: 100vw;
     overflow: hidden;
     font-family: 'Poppions', sans-serif;
+    background-color: #00447c;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
-    background: red;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 h2 {
@@ -36,22 +36,4 @@ h2 {
     background: white;
     height: 100%;
     width: 100%;
-}
-
-.movies ul {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.search {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.search input[type="text"] {
-    border-radius: 1rem;
-    padding-left: 0.6rem;
-    border: 1px solid black;
 }
