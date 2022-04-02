@@ -1,13 +1,7 @@
 @import '../general.css';
 
-.selectGenre {
-    display: flex;
-    margin-top: 1rem;
-    gap: 2rem;
-}
-
-.selectGenre select {
-    border: 2px solid black;
-    width: 10rem;
-    text-align: center;  
+.nav-link,
+.nav-link:hover,
+.nav-link:focus{
+    color: white;
 }
