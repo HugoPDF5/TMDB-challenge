@@ -25,15 +25,6 @@ export const callAPI = {
             return response
     },
 
-    getMovieDetails: async (movie_id) => {
-        const response = await api.get(`movie/${movie_id}?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US`)
-            .then(res => {
-                return response
-            }).catch(e => {
-                console.error(e)
-            })
-    },
-
     getMovieByName: async (name_movie) => {
         const response = await api.get(`search/movie?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US&query=${name_movie}`)
             .then(res => {
