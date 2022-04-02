@@ -21,3 +21,14 @@ tbody td {
 tbody td:first-child {
     cursor: pointer;
 }
+
+.btn-outline-success {
+    color: #0076ce;
+    border-color: #0076ce;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #0076ce;
+    border-color: #0076ce;
+}
