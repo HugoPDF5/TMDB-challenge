@@ -1,7 +1,18 @@
+import { useState } from 'react'
 import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap'
+import { callAPI } from '../../services/movies_api'
 
 
 function Menu() {
+
+    const [wishMovie, setWishMovie] = useState('')
+
+
+    const relatedMovies = async () => {
+        const response = await callAPI.getMovieByName(wishMovie)
+        console.log(response)
+    }
+
     return (
 
         <Navbar bg="light" expand="lg">
@@ -22,8 +33,10 @@ function Menu() {
                             placeholder="Search a movie"
                             className="me-2"
                             aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
+                            onChange= {e => setWishMovie(e.target.value) }
+                            />
+                            {console.log(wishMovie)}
+                        <Button onClick={relatedMovies} variant="outline-success">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
