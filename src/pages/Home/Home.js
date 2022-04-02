@@ -20,13 +20,13 @@ function Home() {
     receiveMovies()
   }, [])
 
-
+  // Requisição recebendo todos os resultados possiveis
   const receiveMovies = async () => {
     let moviesArray = await callAPI.getMoviesByPopularity()
     setMovies(moviesArray)
   }
 
-  function itemSelecionado(event) {
+  function getItemSelected(event) {
     setItemSelected(event)
     handleShow()
   }
@@ -47,9 +47,9 @@ function Home() {
             <tbody>
               {movies.map(item => {
                 return <tr>
-                  <td onClick={e => itemSelecionado(item)}>  {item.title} <img src={details}></img> </td>
-                  <td> {item.popularity} <img src={person}></img> </td>
-                  <td> {item.vote_average} <img src={star}></img> </td>
+                  <td onClick={e => getItemSelected(item)}>  {item.title} <img src={details} alt="details icon"></img> </td>
+                  <td> {item.popularity} <img src={person} alt="person icon"></img> </td>
+                  <td> {item.vote_average} <img src={star} alt="star icon"></img> </td>
                 </tr>
               })}
             </tbody>
