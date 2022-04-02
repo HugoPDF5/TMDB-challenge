@@ -23,12 +23,16 @@ tbody td:first-child {
 }
 
 .btn-outline-success {
-    color: #0076ce;
-    border-color: #0076ce;
+    color: white;
+    border-color: white;
 }
 
 .btn-outline-success:hover {
-    color: #fff;
-    background-color: #0076ce;
-    border-color: #0076ce;
+    color: #0076ce;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.d-flex { 
+    margin-bottom: 1rem;
 }
