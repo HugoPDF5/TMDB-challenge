@@ -18,7 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    font-family: 'Poppions', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #00447c;
 }
 
@@ -33,7 +33,6 @@ h2 {
 }
 
 .movies {
-    background: white;
     height: 100%;
     width: 100%;
 }
