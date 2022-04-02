@@ -28,9 +28,14 @@ export const callAPI = {
     getMovieByName: async (name_movie) => {
         const response = await api.get(`search/movie?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US&query=${name_movie}`)
             .then(res => {
-                return response
+                return res.data.results.filter((item, index) => {
+                    if (index < 11) {
+                        return item
+                    }
+                })
             }).catch(e => {
                 console.error(e)
             })
+            return response
     }
 }
