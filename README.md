@@ -12,12 +12,6 @@ Aplicação lista os filmes mais populares do momento na pagina inicial, consumi
 $ git clone https://github.com/HugoPDF5/TMDB-challenge
 ```
 
-**Entre na pasta com:**
-
-```bash
-$ cd desafio-lead
-```
-
 **Após isso, instale o projeto com:**
 
 ```bash
@@ -30,4 +24,3 @@ $ npm install
 - [React Router DOM](https://reacttraining.com/react-router/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Axios](https://github.com/axios/axios)
-- [Eslint](https://eslint.org/)
