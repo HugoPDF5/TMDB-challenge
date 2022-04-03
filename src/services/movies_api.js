@@ -17,7 +17,7 @@ export const callAPI = {
     },
 
     getMovieGenres: async () => {
-        const response = await api.get('genre/movie/list?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US')
+        const response = await api.get('genre/movie/list?api_key=fc45e0562ca750d5ca8a6f31cf72af4c')
             .then(res => {
                return res.data.genres
             }).catch(e => {
@@ -27,7 +27,7 @@ export const callAPI = {
     },
 
     getMovieByName: async (name_movie) => {
-        const response = await api.get(`search/movie?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&language=en-US&query=${name_movie}`)
+        const response = await api.get(`search/movie?api_key=fc45e0562ca750d5ca8a6f31cf72af4c&query=${name_movie}`)
             .then(res => {
                 if(res.data.total_results === 0) {
                     return alert('Movie not found')
