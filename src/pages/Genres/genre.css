@@ -1,7 +1,7 @@
 @import '../general.css';
 
-.nav-link,
-.nav-link:hover,
-.nav-link:focus{
+#basic-nav-dropdown,
+#basic-nav-dropdown:hover,
+#basic-nav-dropdown:focus {
     color: white;
 }
