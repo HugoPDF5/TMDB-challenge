@@ -1,16 +1,14 @@
 import Home from './pages/Home/Home';
 import Genre from './pages/Genres/Genre'
 import Menu from './Components/Menu/Menu'
-import {Router, Route} from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
 import history from './history';
 
 
-function App(){
+function App() {
 
-    return (
-      
+  return (
     <Router history={history}>
-      
       <Menu />
       <Route exact path="/">
         <Home />
@@ -20,7 +18,7 @@ function App(){
         <Genre />
       </Route>
     </Router>
-    )
+  )
 }
 
 export default App;
