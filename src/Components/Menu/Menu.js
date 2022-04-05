@@ -1,4 +1,6 @@
 import {  Container, Nav, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import './menu.css'
 
 
 function Menu() {
@@ -13,8 +15,9 @@ function Menu() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/genres">Genre</Nav.Link>
+                        <Nav.Link> <Link to='/'>Home</Link></Nav.Link>
+                        <Nav.Link> <Link to='/genres'>Genres</Link></Nav.Link>
+                        
                     </Nav> 
                 </Navbar.Collapse>
             </Container>
